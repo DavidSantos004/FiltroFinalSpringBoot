@@ -2,6 +2,8 @@ package com.example.ContenidosAudiovisuales.persistence.entity;
 
 import java.math.BigDecimal;
 
+import com.example.ContenidosAudiovisuales.persistence.entity.DTO.CalificacionDTO;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -88,5 +90,13 @@ public class Calificacion {
     public Calificacion() {
     }
     
-    
+    public CalificacionDTO toDTO(){
+        CalificacionDTO dto = new CalificacionDTO();
+        dto.setIdCalificacion(idCalificacion);
+        dto.setContenido(contenido);
+        dto.setUsuario(usuario);
+        dto.setCalificacion(calificacion);
+        dto.setComentario(comentario);
+        return dto;
+    }
 }
