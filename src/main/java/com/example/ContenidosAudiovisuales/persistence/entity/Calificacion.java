@@ -11,10 +11,12 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
+
+
 @Entity
 @Table(name = "calificaciones")
 public class Calificacion {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "IdCalificacion")
@@ -72,6 +74,18 @@ public class Calificacion {
 
     public void setComentario(String comentario) {
         this.comentario = comentario;
+    }
+
+    public Calificacion(Long idCalificacion, Contenido contenido, Usuario usuario, BigDecimal calificacion,
+            String comentario) {
+        this.idCalificacion = idCalificacion;
+        this.contenido = contenido;
+        this.usuario = usuario;
+        this.calificacion = calificacion;
+        this.comentario = comentario;
+    }
+
+    public Calificacion() {
     }
     
     

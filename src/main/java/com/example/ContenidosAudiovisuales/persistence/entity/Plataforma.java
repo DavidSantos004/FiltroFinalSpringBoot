@@ -45,6 +45,15 @@ public class Plataforma {
     public void setPlataformaContenido(String plataformaContenido) {
         this.plataformaContenido = plataformaContenido;
     }
+
+    public Plataforma(Long idPlataforma, String tipoDeContenido, String plataformaContenido) {
+        this.idPlataforma = idPlataforma;
+        this.tipoDeContenido = tipoDeContenido;
+        this.plataformaContenido = plataformaContenido;
+    }
+
+    public Plataforma() {
+    }
     
     
     

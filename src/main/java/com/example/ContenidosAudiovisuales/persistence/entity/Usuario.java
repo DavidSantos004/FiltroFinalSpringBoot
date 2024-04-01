@@ -57,6 +57,16 @@ public class Usuario {
     public void setEdad(int edad) {
         this.edad = edad;
     }
+
+    public Usuario(Long idUsuario, String nombre, String correoElectronico, int edad) {
+        this.idUsuario = idUsuario;
+        this.nombre = nombre;
+        this.correoElectronico = correoElectronico;
+        this.edad = edad;
+    }
+
+    public Usuario() {
+    }
     
     
     

@@ -81,5 +81,19 @@ public class Contenido {
     public void setEstadoDeVisualizacion(EstadoDeVisualizacion estadoDeVisualizacion) {
         this.estadoDeVisualizacion = estadoDeVisualizacion;
     }
+
+    public Contenido(Long idContenido, String nombre, String tipoDeContenido, String genero1, String genero2,
+            EstadoDeVisualizacion estadoDeVisualizacion) {
+        this.idContenido = idContenido;
+        this.nombre = nombre;
+        this.tipoDeContenido = tipoDeContenido;
+        this.genero1 = genero1;
+        this.genero2 = genero2;
+        this.estadoDeVisualizacion = estadoDeVisualizacion;
+    }
+
+    public Contenido() {
+    }
+    
     
 }
